@@ -34,6 +34,9 @@ Increment/Decrement: increment/decrement each store, returning
 the new number if any stores was successfully
 incremented/decremented, nil otherwise
 
+For more background info, check out this blog post:
+[Writing a Custom Rails Cache Store](http://intridea.com/posts/writing-a-custom-rails-cache-store)
+
 ### Rails Configuration
 
 Add to your Gemfile:
