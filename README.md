@@ -13,13 +13,15 @@ other cache stores.
 For example, to initialize a CascadeStore that
 cascades through MemCacheStore, MemoryStore, and FileStore:
 
-    ActiveSupport::Cache.lookup_store(:cascade_store,
-      :stores => [
-        :mem_cache_store,
-        :memory_store,
-        :file_store
-      ]
-    })
+```ruby
+ActiveSupport::Cache.lookup_store(:cascade_store,
+  :stores => [
+    :mem_cache_store,
+    :memory_store,
+    :file_store
+  ]
+})
+```
 
 Cache operation behavior:
 
@@ -31,6 +33,24 @@ Write/Delete: write/delete through to each cache store in
 Increment/Decrement: increment/decrement each store, returning
 the new number if any stores was successfully
 incremented/decremented, nil otherwise
+
+### Rails Configuration
+
+Add to your Gemfile:
+
+```ruby
+gem 'activesupport-cascadestore'
+```
+
+In your production.rb:
+
+```ruby
+# configure with stores you want to use.
+config.cache_store = [:cascade_store, :stores => [
+  :memory_store,
+  :file_store
+]]
+```
 
 ### Development
 
