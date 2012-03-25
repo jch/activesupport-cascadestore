@@ -1,0 +1,18 @@
+This is an example Rails app to demonstrate how to use
+`ActiveSupport::CascadeStore`.
+
+To run this example:
+
+```
+bundle
+rake db:create:all db:migrate
+rails server -e production
+
+# curl several times to see the response is cached
+curl -i http://localhost:3000/
+```
+
+The relevant files to look at are:
+
+* config/environments/production.rb
+* app/controllers/hello_controller.rb

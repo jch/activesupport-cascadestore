@@ -1,0 +1,12 @@
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-25 12:05:31 -0400
+Processing by HelloController#index as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-25 12:05:41 -0400
+Processing by HelloController#index as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
