@@ -77,7 +77,7 @@ module ActiveSupport
         entry = nil
         synchronize do
           @stores.detect do |store|
-            entry = store.send(:read_entry, key, options)
+            entry = store.send(:read_entry, key, options) rescue nil
           end
         end
         entry
