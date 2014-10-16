@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name        = "activesupport-cascadestore"
   s.version     = "0.0.2"
   s.authors     = ["Jerry Cheung"]
-  s.email       = ["jch@whatcodecraves.com"]
+  s.email       = ["jollyjerry@gmail.com"]
   s.homepage    = "http://github.com/jch/activesupport-cascadestore"
   s.summary     = %q{write-through cache store that allows you to chain multiple cache stores together}
   s.description = %q{write-through cache store that allows you to chain multiple cache stores together}
